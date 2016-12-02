@@ -63,9 +63,9 @@ Rails.application.configure do
     :address        => 'smtp.sendgrid.net',
     :port           => '587',
     :authentication => :plain,
-    :user_name      => ENV['SENDGRID_USERNAME'],
-    :password       => ENV['SENDGRID_PASSWORD'],
-    :domain         => 'heroku.com',
+    :user_name      => ENV['app60174277@heroku.com'],
+    :password       => ENV['NJXxjk2wheroku'],
+    :domain         => 'umnmilitia.herokuapp.com',
     :enable_starttls_auto => true
   }
   config.action_mailer.perform_caching = false
