@@ -1,7 +1,13 @@
-<div class="center jumbotron">
-    <ul class="users">
-  <%= render @user.name %>
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<%= will_paginate %>
+
+<ul class="users">
+  <%= render @users %>
 </ul>
+<%= will_paginate %>
+<div class="center jumbotron">
   <%= link_to "ENLIST", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 
