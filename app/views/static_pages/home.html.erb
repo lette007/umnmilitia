@@ -1,5 +1,14 @@
 <div class="center jumbotron">
-  <%= link_to "LOGIN", login_path, class: "btn btn-lg btn-primary" %>
-  <%= link_to "ENLIST", signup_path, class: "btn btn-lg btn-primary" %>
+  <% if logged_in? %>
+    <% provide(:title, "About") %>
+    <h1>info / actions for user</h1>
+    <p>
+        yeah
+    </p> 
+  <% else %>
+    <%= link_to "LOGIN", login_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "ENLIST", signup_path, class: "btn btn-lg btn-primary" %>
+  <% end %>
+  
 </div>
 
