@@ -1,12 +1,9 @@
 <div class="center jumbotron">
   <% if logged_in? %>
     <% provide(:title, "home") %>
-    <h1>
-      <% current_user.name %>
-    </h1>
-    <p>
-        yeah
-    </p> 
+    <ul class="users">
+      <%= render @user %>
+    </ul>
   <% else %>
     <%= link_to "LOGIN", login_path, class: "btn btn-lg btn-primary" %>
     <%= link_to "ENLIST", signup_path, class: "btn btn-lg btn-primary" %>
