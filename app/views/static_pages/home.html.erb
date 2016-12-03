@@ -1,7 +1,7 @@
-<ul class="users">
-  <%= render @current_user.name %>
-</ul>
 <div class="center jumbotron">
+    <ul class="users">
+  <%= render @user.name %>
+</ul>
   <%= link_to "ENLIST", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 
