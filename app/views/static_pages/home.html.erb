@@ -1,7 +1,9 @@
 <div class="center jumbotron">
   <% if logged_in? %>
-    <% provide(:title, "About") %>
-    <h1>info / actions for user</h1>
+    <% provide(:title, "home") %>
+    <h1>
+      <% current_user.name %>
+    </h1>
     <p>
         yeah
     </p> 
