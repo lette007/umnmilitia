@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    redirect_to root_url and return unless nil
+    redirect_to about_path and return unless nil
   end
 
   def new
