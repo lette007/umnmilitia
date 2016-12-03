@@ -205,19 +205,6 @@ input {
   }
 }
 
-/* xl button */
-
-.btn-xlarge {
-    padding: 18px 28px;
-    font-size: 30px; //change this to your desired size
-    line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
-}
-
-/* clean-looking buttons from https://www.sanwebe.com/2013/01/40-css-buttons-from-codepen */
-
 // colors
 $dark:  #333030;
 $ocean:  #2b90d9;
@@ -229,6 +216,20 @@ $alge: #79a8a9;
 $flower: #353866;
 $coal: #202129;
 $coal-dust: #edeeee;
+
+/* xl button */
+.btn-xlarge {
+    color: $snow;
+    background: $grass;
+    padding: 18px 28px;
+    font-size: 30px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+/* buttons from https://www.sanwebe.com/2013/01/40-css-buttons-from-codepen */
 
 // button styles
 .button {
