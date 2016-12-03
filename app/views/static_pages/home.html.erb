@@ -1,8 +1,8 @@
 <div class="center jumbotron">
+  <% provide(:title, "home") %>
   <% if logged_in? %>
-    <% provide(:title, "home") %>
     <ul class="users">
-      <%= render @user %>
+      <%= render @users.current_user %>
     </ul>
   <% else %>
     <%= link_to "LOGIN", login_path, class: "btn btn-lg btn-primary" %>
