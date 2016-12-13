@@ -1,11 +1,15 @@
-<div class="center jumbotron">
-  <% provide(:title, "home") %>
-  <% if logged_in? %>
-      <h1><%= current_user.name %></h1>
-  <% else %>
-    <%= link_to "LOGIN", login_path, class: "btn btn-lg btn-primary" %>
-    <%= link_to "ENLIST", signup_path, class: "btn btn-lg btn-primary" %>
-  <% end %>
-  
-</div>
+<% provide(:title, '?') %>
+<h1>What is the password?</h1>
 
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user, url: signup_path) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.submit "Enter", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
