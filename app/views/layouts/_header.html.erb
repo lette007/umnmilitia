@@ -14,12 +14,15 @@
               <li>
                 <%= link_to "log out", logout_path, method: "delete" %>
               </li>
+              <li>
+                <%= link_to "about", about_path %>
+              </li>
             </ul>
           </li>
         <% else %>
          
         <% end %>
-        <li><%= link_to "about", about_path %></li>
+        
       </ul>
     </nav>
   </div>
