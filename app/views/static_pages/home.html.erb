@@ -1,15 +1,6 @@
-<% provide(:title, '?') %>
-<h1>What is the password?</h1>
-
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@user, url: signup_path) do |f| %>
-      <%= render 'shared/error_messages' %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
-
-      <%= f.submit "Enter", class: "btn btn-primary" %>
-    <% end %>
-  </div>
-</div>
+create user w/ password: lovemonkey
+show form to enter password
+if (password = user.password)
+  {
+  go to /nicole
+  }
