@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get    '/nicole4', to: 'static_pages#nicole4'
   get    '/nicole5', to: 'static_pages#nicole5'
   get    '/nicole6', to: 'static_pages#nicole6'
+   get    '/nicole7', to: 'static_pages#nicole7'
   get    '/signup',  to: 'users#new'
   post '/signup',  to: 'users#create'
   get   '/edit', to: 'users#edit'
